@@ -1,0 +1,23 @@
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-bottom: solid 2px gray;
+}
+
+.product-item image {
+  width: 200px;
+  height: auto;
+}
+
+.product-item text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-item button {
+  margin-top: 10px;
+}

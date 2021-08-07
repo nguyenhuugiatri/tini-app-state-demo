@@ -1,0 +1,8 @@
+{
+  "name": "state-management",
+  "version": "0.1.0",
+  "tiki": {
+    "appIdentifier": "vn.tiki.state",
+    "buildNumber": 1
+  }
+}

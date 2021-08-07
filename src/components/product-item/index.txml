@@ -1,0 +1,5 @@
+<view class="product-item">
+  <image src="{{image_url}}" />
+  <text>{{name}}</text>
+  <button onTap="_onAddToCart">Add to cart</button>
+</view>

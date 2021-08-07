@@ -1,0 +1,12 @@
+<view class="product-list">
+  <view class="cart">Cart: {{cart.length}}</view>
+
+  <product-item
+    tiki:for="{{products}}"
+    tiki:key="{{item.id}}"
+    id="{{item.id}}"
+    image_url="{{item.image_url}}"
+    name="{{item.name}}"
+    onAddToCart="onAddToCart"
+  />
+</view>
