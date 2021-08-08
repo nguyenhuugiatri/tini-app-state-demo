@@ -7,6 +7,5 @@
     id="{{item.id}}"
     image_url="{{item.image_url}}"
     name="{{item.name}}"
-    onAddToCart="onAddToCart"
   />
 </view>

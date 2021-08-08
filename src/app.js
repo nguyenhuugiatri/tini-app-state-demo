@@ -1,7 +1,8 @@
 App({
-  onLaunch(options) {
-    console.log('App onLaunch');
-  },
-  onShow(options) {
+  cart: [],
+
+  onAddToCart(product) {
+    this.cart.push(product);
+    console.log('Cart', this.cart);
   },
 });

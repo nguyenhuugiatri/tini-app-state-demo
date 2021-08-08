@@ -17,10 +17,9 @@ Page({
     ],
   },
 
-  onAddToCart(product) {
-    const { cart } = this.data;
+  onShow() {
     this.setData({
-      cart: [...cart, product],
+      cart: getApp().cart,
     });
   },
 });

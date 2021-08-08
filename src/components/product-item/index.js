@@ -7,7 +7,7 @@ Component({
 
   methods: {
     _onAddToCart() {
-      this.props.onAddToCart(this.props);
+      getApp().onAddToCart(this.props);
     },
   },
 });
