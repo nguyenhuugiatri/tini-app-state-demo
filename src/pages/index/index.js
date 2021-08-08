@@ -17,10 +17,23 @@ Page({
     ],
   },
 
-  onAddToCart(product) {
-    const { cart } = this.data;
+  onLoad() {
+    this.cartUpdate = (cart) => {
+      this.setData({
+        cart,
+      });
+    };
+
+    getApp().cartEvent.on('cart::update', this.cartUpdate);
+  },
+
+  onReady() {
     this.setData({
-      cart: [...cart, product],
+      cart: getApp().cart,
     });
+  },
+
+  onUnload() {
+    getApp().cartEvent.removeListener('cart::update', this.cartUpdate);
   },
 });
